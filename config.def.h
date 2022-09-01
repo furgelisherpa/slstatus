@@ -11,11 +11,8 @@ static const char unknown_str[] = "n/a";
 
 static const struct arg args[] = {
 	/* function format          argument */
-	{ run_command, "  %2s%% | ", "pamixer --get-volume" },
-	{ cpu_perc, " %s%% | ", NULL	      },
-	{ ram_perc, " %s%% | ", NULL	      },
-	{ disk_perc , " %s%% | ", "/home"	      },
-	{ run_command, "%s | ", "date '+ %b %d (%a)' " },
-	{ run_command, "%s ", "date '+ %I:%M%P'" },
+	{ run_command, "🔊 %2s%% | ", "pamixer --get-volume" },
+	{ run_command, "%s | ", "date '+📅 %b %d (%a)' " },
+	{ run_command, "%s ", "date '+🕖 %I:%M%P'" },
 };
 
